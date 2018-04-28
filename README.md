@@ -1,4 +1,4 @@
-# infijs
+# infi.js
 InfiJs is light weight Javascript framework for building forms and file uploading.
 
 Included features : 
