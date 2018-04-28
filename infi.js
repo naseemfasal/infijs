@@ -1,6 +1,7 @@
 /*!
  * InfiJs Javascript Library v1.1.1
  * http://naseemfasal.com/infijs
+ * Author name :Naseem Fasal
  *
  *
  * Released under the MIT license
