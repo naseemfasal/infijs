@@ -12,9 +12,26 @@ Multi file upload system with built in css
 
 Usage :-
 
-     
+html form
+```  
+  <form id="form_id" action="http://example.com/action.php">
+      <div class="input-group">
+        <label>First name</label>
+        <input type="text" id="name_input_id" />
+        <div class="invalid-feedback"></div>    <!-- Here validation error will be displayed -->
+      </div>
+      
+      <div class="input-group">
+        <label>Email</label>
+        <input type="text" id="email_input_id" />
+        <div class="invalid-feedback"></div>    <!-- Here validation error will be displayed -->
+      </div>      
+        
+        <button id="submit-btn-id">Submit</button>
+  </form>
+```   
 
-
+Javascript
     
 ```    
 var form_fields = {
@@ -22,7 +39,13 @@ var form_fields = {
         'name':'First Name',    
         'required' : true,
         'type':'text'       // Available types Text, Email
-    }                   
+    },
+    'email_input_id' : {   //id selector of first field
+        'name':'Email',    
+        'required' : true,
+        'type':'email'       // Available types Text, Email
+    }    
+    
 };
          
 infi.ajaxForm({
