@@ -35,6 +35,7 @@ html form
 Javascript
     
 ```    
+<script>
 var form_fields = {
     'name_input_id' : {   //id selector of first field
         'name':'First Name',    
@@ -91,5 +92,5 @@ infi.ajaxForm({
   }     
 }
 });   
-
+</script>
 ```	      
