@@ -26,8 +26,9 @@ html form
         <input type="text" id="email_input_id" />
         <div class="invalid-feedback"></div>    <!-- Here validation error will be displayed -->
       </div>      
+        <div id="common_status_div"></div>  //  <!-- In case of common validation flag set to true then all validation errors will be displayed here instead of individual error displaying -->
         
-        <button id="submit-btn-id">Submit</button>
+        <button id="submit-btn-id">Submit</button>   <!-- submit button with selector , you can add loading icon to button in ajax request as below example --> 
   </form>
 ```   
 
@@ -55,7 +56,7 @@ infi.ajaxForm({
 'validation_status_div':'.invalid-feedback',  // class of div where form validation error appended in case individual validation 
 'error_input_class':'is-invalid',  // class to be added to input on validation error
 'common_validation_status':false,   //set this to true to add all validation error to one div instead of individual
-'common_validation_status_div':'#status_div',  // set common validation div selector here incase of common validation true to display common validation errros.
+'common_validation_status_div':'#common_status_div',  // set common validation div selector here incase of common validation true to display common validation errros.
 'ajax_options' : {   // Ajax submit will be called if the form validation is true
   'method':'POST',
   'dataType':'json',
