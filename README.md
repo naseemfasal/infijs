@@ -94,3 +94,7 @@ infi.ajaxForm({
 });   
 </script>
 ```	      
+
+ Feel free to send me an email if you have any problems.
+
+Thanks, - Naseem Fasal naseem at infiyo dot com  /  @naseemfasal 
